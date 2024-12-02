@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+  
+        <nav class="d-flex justify-content-between d-none">
+            <h2>smart login</h2>
+            <button onclick="logout()" class="border border-primary border-1 logout">
+                logout
+            </button>
+        </nav>
+      
+    <div class="container-fluid text-center my-5 bg  d-flex justify-content-center align-items-center d-block" id="slideone">
+        
+       <div class="sing m-auto p-5 w-50 w-70">
+        <h2>Smart Login System
+        </h2>
+        <form action="">
+            <input type="email" class="d-block w-100 p-1 mb-2 rounded-3 border-1 border-white bg" id="inputtwo">
+
+
+            <input type="password" class="d-block w-100 p-1 mb-2 rounded-3 border-1 border-white bg" id="inputone">
+
+            <input type="text"  class="d-block w-100 p-1 mb-2 rounded-3 d-none border-1 border-white bg" id="signup">
+
+            <h2 class=' d-none text-danger' id="wrong">incorrect email or password
+
+            </h2>
+        </form>
+        <button class=" mt-3 w-100 bg btn1 rounded-3 border-3 d-block p-2" id="btn"onclick="add()">Login</button>
+        <h2 id="succ" class="d-none">
+            success
+        </h2>
+        <button class=" mt-3 w-100 bg btn1 rounded-3 border-3 d-none p-2" id="btnsucc"   onclick="success()">sing up</button>
+
+        <h4 class="text-white mt-2 d-block" id="sign" >Don’t have an account? <a href="#"> <h4 class="d-inline" onclick="btnsign()" >Sign up</h4></a></h4>
+        <h4 class="text-white mt-2 d-none" id="signin">Don’t have an account? <a href="#"> <h4 class="d-inline" onclick="btnin()" >Sign in</h4></a></h4>
+
+
+       </div>
+       
+    </div>
+    <div class="container text-center bg d-none sing d-flex justify-content-center align-items-center" id="slidetwo">
+        
+       
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js "></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
